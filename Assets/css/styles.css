@@ -15,7 +15,8 @@ body {
     overflow-x: hidden;
     font-size: 16px;
     display: flex; /* Usando flexbox para controlar o layout */
-    flex-direction: column; /* Alinhando os itens na vertical */
+    flex-direction: column; /* Alinhand
+    o os itens na vertical */
 }
 
 header {

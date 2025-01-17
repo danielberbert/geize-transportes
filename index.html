@@ -6,24 +6,176 @@
     <meta name="description" content="Geize Transportes - Soluções de transporte de carga e frota de caminhões e guindastes.">
     <meta name="keywords" content="Geize Transportes, caminhões, guindastes, transporte de carga, CN, Gedex, express">
     <title>Geize Transportes - Tela Inicial</title>
-    <link rel="stylesheet" type="text/css" href="Assets/css/styles.css"> <!-- Caminho corrigido -->
+     <!--<link rel="stylesheet" type="text/css" href="Assets/css/styles.css"> -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #fff;
+            font-family: "Montserrat";
+            color: #000;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .container-header {
+            background-color: #333;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .nav-bar ul {
+            list-style: none;
+            color: #fff;
+            display: flex;
+            margin-left: 40px;
+        }
+
+        .nav-bar ul li {
+            margin-right: 10px;
+        }
+
+        .nav-bar button {
+            background-color: #E8E8E8;
+            color: #000;
+            border: none;
+            font-size: 0.70rem;
+            width:  180px;
+            height: 40px;
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            padding: 10px;
+            margin-left: 120px;
+        }
+
+        .italico {
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .negrito {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        #about {
+            background: #F1F1F1;
+        }
+
+        #title-services {
+            display: flex;
+            justify-content: end;
+            margin-right: 200px;
+            font-size: 2.6rem;
+            gap: 5px;
+        }
+
+        .consultoras {
+            display: flex;
+            margin-left: 140px;
+            margin-top: 20px;
+        }
+
+        .consultoras img {
+            width: 50px;    
+            border-radius: 50%;
+        }
+
+        .consultoras h3 {
+            display: flex;
+            padding-left: 10px;
+            padding-top: 12px;
+            gap: 5px;
+            
+        }
+
+        .conteudo {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start; /* Para alinhar os itens ao topo */
+            align-items: flex-start; /* Garante que o alinhamento vertical é no topo */
+            gap: 15px; /* Adiciona espaço entre os itens */
+        }
+        
+        /* Titulo dos posts */
+        .conteudo h3 {
+            width: 100%;
+            margin-top: 10px;
+            margin-left: 140px;
+            margin-bottom: 10px;
+            font-size: 1.6rem;
+            font-weight: 500;
+            padding: 5px 0px;
+        }
+
+        /* Paragrafo dos posts */
+        .conteudo p {
+            display: flex;
+            align-items: flex-start;
+            width: 48%;
+            height: auto;
+            margin-left: 25px;
+            margin-right: 25px;
+            font-size: 1.2rem;
+            text-align: justify;
+        }   
+
+        /* Foto dos posts */
+        .foto-conteudo {
+            width: 560px;
+            height: 340px;
+            margin-left: 15px;
+            border-radius: 10px;
+        }
+
+        .btn-saiba-mais {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            font-size: 1rem;
+            width:  180px;
+            height: 40px;
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-bottom: 40px;
+            margin-left: 400px;
+        }
+
+
+
+        @media (max-width: 768px) {
+
+        }
+
+        @media (min-width: 1024px) {
+
+        }
+
     </style>
-    <script src="Assets/js/scripts.js"></script>
+    <!-- <script src="Assets/js/scripts.js"></script> -->
 </head>
 <body>
+    <!-- Header da página -->
     <header>
         <div class="container-header">
-            <nav class="logo">
-                <a href="index.html"><span class="cn">CN</span><span class="guindastes">GUINDASTES</span></a> <!-- Logo da empresa -->
-            </nav>
-            <div class="menu-hamburguer">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <nav class="barra-navegacao"> <!-- Barra de navegação -->
+            <a href="index.html"><span class="italico">CN</span><span class="negrito">GUINDASTES</span></a>
+            <nav class="nav-bar"> <!-- Barra de navegação -->
                 <ul>
                     <li><a href="#home" class="home">PAGINA INICIAL</a></li>
                     <li>|</li>
@@ -35,11 +187,12 @@
                     <li>|</li>
                     <li><a href="teste.html" class="contact">CONTATO</a></li>
                 </ul>
-                <button href="#orcaomento" class="btn-solicitar">SOLICITAR ORÇAMENTO</button> <!-- Botão de solicitar orçamento -->
             </nav>
+            <button href="#orcaomento" class="btn-solicitar">SOLICITAR ORÇAMENTO</button> <!-- Botão de solicitar orçamento -->
         </div>
     </header>
-    <!-- Section: Carrossel -->
+
+    <!-- Section: Carrossel 
     <section>
         <div class="carousel">
             <div class="carousel-inner">
@@ -102,25 +255,106 @@
             </div>
         </div>
     </section>
+    -->
 
     <!-- Section: Quem somos -->
-    <section class="quem-somos">
-        <div class="container-sobre">
-            <div class="left-content">
-                <h2 class="title-sobre"><span class="quem">QUEM</span> <span class="somos">SOMOS</span></h2>
-                <p class="texto-sobre"> Criada nos anos noventa, a Geize transportes tem uma trajetória marcada por honestidade, determinação e força do casal fundador. O que um dia foi apenas um sonho se transformou em uma meta e hoje é uma realidade que se mantém viva pelos mesmos ideais, sendo dirigida pelos descendentes dos mestres e pioneiros desta grande empresa.
-                    O objetivo inicial foi construir um negócio lucrativo que pudesse resultar em geração de empregos, hoje contamos com um grande quadro de colaboradores que agregam valores a nossa organização. Através da Geize Transportes os funcionários obtém a chance de aprimoramento profissional, tornando-se profissionais habilitados e reconhecidos por um alto padrão de experiencia.</p>
-                <button class="btn-saiba-mais">SAIBA MAIS</button>
-            </div>
-            <div class="right-content">
-                <img src="Assets/image/Foto-Quem-Somos.png" alt="Logo Geize Transportes" class="img-sobre">
-            </div>
-        </div>
+    <section id="about"> 
+        <h2>
+            <span class="italico">QUEM</span> <span class="negrito">SOMOS</span>
+        </h2>
+        <div class="conteudo">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, iure veniam consequuntur eum, inventore hic, ad odio dolores maxime sit culpa ratione accusantium possimus assumenda! Eveniet labore porro eaque illo!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, iure veniam consequuntur eum, inventore hic, ad odio dolores maxime sit culpa ratione accusantium possimus assumenda! Eveniet labore porro eaque illo!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, iure veniam consequuntur eum, inventore hic, ad odio dolores maxime sit culpa ratione accusantium possimus assumenda! Eveniet labore porro eaque illo!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, iure veniam consequuntur eum, inventore hic, ad odio dolores maxime sit culpa ratione accusantium possimus assumenda! Eveniet labore porro eaque illo!
+            </p>
+            <img src="Assets/image/Foto-Quem-Somos.png" alt="Quem somos" class="foto-conteudo">
+        </div>  
+        <button class="btn-saiba-mais">SAIBA MAIS</button>
     </section>
     
+    
     <!-- Section: Nossos serviços -->
-    <h2 class="title-services"><span class="nossos">NOSSOS</span> <span class="servicos">SERVIÇOS</span></h2>
+    <section id="services"> 
+        <!-- TITULO -->
+        <h2 id ="title-services">
+            <span class="italico">NOSSOS</span> <span class="negrito">SERVIÇOS</span>
+        </h2>
 
+        <hr>
+
+        <!-- SERVIÇO 1 -->
+        <div class="consultoras"> 
+            <img src="Assets/image/ana-claudia.png" alt="Foto da consultora">
+            <h3> 
+                <span class="negrito">ANA CLAUDIA</span> - <span class="italico">CONSULTORA COMERCIAL</span>
+            </h3>
+        </div>
+        <div class="conteudo">
+            <h3> 
+                Movimentação complexas com Guindastes
+            </h3>
+            <img src="Assets/image/GUINDASTESPRAÇA.jpg" alt="Quem somos" class="foto-conteudo">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, iure veniam consequuntur eum, inventore hic, ad odio dolores maxime sit culpa ratione accusantium possimus assumenda! Eveniet labore porro eaque illo!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, iure veniam consequuntur eum, inventore hic, ad odio dolores maxime sit culpa ratione accusantium possimus assumenda! Eveniet labore porro eaque illo!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, iure veniam consequuntur eum, inventore hic, ad odio dolores maxime sit culpa ratione accusantium possimus assumenda! Eveniet labore porro eaque illo!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, iure veniam consequuntur eum, inventore hic, ad odio dolores maxime sit culpa ratione accusantium possimus assumenda! Eveniet labore porro eaque illo!
+            </p>
+        </div>  
+        
+        <hr>
+
+        <!-- SERVIÇO 2 -->
+        <div class="consultoras"> 
+            <img src="Assets/image/ana-luiza.png" alt="Foto da consultora">
+            <h3> 
+                <span class="negrito">ANA LUIZA</span> - <span class="italico">CONSULTORA COMERCIAL</span>
+            </h3>
+        </div>
+        <div class="conteudo">
+            <h3> 
+                Içamento de blocos de Concreto - Munck 48 TON
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, iure veniam consequuntur eum, inventore hic, ad odio dolores maxime sit culpa ratione accusantium possimus assumenda! Eveniet labore porro eaque illo!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, iure veniam consequuntur eum, inventore hic, ad odio dolores maxime sit culpa ratione accusantium possimus assumenda! Eveniet labore porro eaque illo!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, iure veniam consequuntur eum, inventore hic, ad odio dolores maxime sit culpa ratione accusantium possimus assumenda! Eveniet labore porro eaque illo!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, iure veniam consequuntur eum, inventore hic, ad odio dolores maxime sit culpa ratione accusantium possimus assumenda! Eveniet labore porro eaque illo!
+            </p>
+            <img src="Assets/image/GUINDASTESPRAÇA.jpg" alt="Quem somos" class="foto-conteudo">
+        </div> 
+
+        <hr>
+
+        <!-- SERVIÇO 3 -->
+        <div class="consultoras"> 
+            <img src="Assets/image/lanucha.png" alt="Foto da consultora">
+            <h3> 
+                <span class="negrito">LANUCHA MIRANDA</span> - <span class="italico">GERENTE COMERCIAL</span>
+            </h3>
+        </div>
+        <div class="conteudo">
+            <h3> 
+                Força em Dobro 
+            </h3>
+            <img src="Assets/image/GUINDASTESPRAÇA.jpg" alt="Quem somos" class="foto-conteudo">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, iure veniam consequuntur eum, inventore hic, ad odio dolores maxime sit culpa ratione accusantium possimus assumenda! Eveniet labore porro eaque illo!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, iure veniam consequuntur eum, inventore hic, ad odio dolores maxime sit culpa ratione accusantium possimus assumenda! Eveniet labore porro eaque illo!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, iure veniam consequuntur eum, inventore hic, ad odio dolores maxime sit culpa ratione accusantium possimus assumenda! Eveniet labore porro eaque illo!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, iure veniam consequuntur eum, inventore hic, ad odio dolores maxime sit culpa ratione accusantium possimus assumenda! Eveniet labore porro eaque illo!
+            </p>
+        </div> 
+
+        
+    
+    </section>
+
+    
+
+    <!-- Footer da página -->
     <footer>
         <div class="info-contatos"></div>
         <div class="local-redes"></div>
